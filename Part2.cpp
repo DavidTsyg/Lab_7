@@ -47,7 +47,7 @@ int main() {
         return 1;
     }
     fread(&n, sizeof(int), 1, pF);
-    for (int i = 0; i < n; i++) {
+    for (unsigned int i = 0; i < n; ++i) {
         struct Computer *p = (Computer *)malloc(sizeof(Computer));
         fread(p, sizeof(Computer), 1, pF);
         push(&head, *p);
