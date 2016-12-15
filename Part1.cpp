@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
     cout << "Enter the number of computers" << endl;
     cin >> n;
     struct Computer *pc = (Computer*)malloc(n * sizeof(Computer));
-    for (int i = 0; i<n; i++)
+    for (unsigned int i = 0; i<n; ++i)
     {
         cout << "Enter <Processor> :" << endl;
         cin >> pc[i].Processor;
