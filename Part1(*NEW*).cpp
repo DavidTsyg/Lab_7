@@ -16,7 +16,7 @@ struct Computer
 
 int main(int argc, char* argv[])
 {
-    int n, p;
+    unsigned int n, p;
     cout << "Enter the number of computers" << endl;
     cin >> n;
     cin.ignore();
